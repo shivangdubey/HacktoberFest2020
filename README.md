@@ -13,4 +13,5 @@ It is a basic Number Guessing Game, created in Python3.
 3) If-Else
 
 **Screenshot**
+
 ![](images/game.jpg)
