@@ -11,3 +11,6 @@ It is a basic Number Guessing Game, created in Python3.
 1) Randon package
 2) While loop
 3) If-Else
+
+**Screenshot**
+![](images/game.jpg)
