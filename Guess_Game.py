@@ -3,7 +3,7 @@ import math
 
 #function definitions
 
-def runGame(start, stop):
+def runGame(start, stop,guesses):
     answer = random.randint(start, stop)
     while guesses < 5:
         user_input = int(input("Enter your Guess : "))
@@ -27,20 +27,28 @@ print("You have got infinite chances, chill and  all the best !")
 print("Option A: 10-20","Option B: 20-30", "Option C: 30-40", "Option D: 40-50", sep = '\n')
 choice_input = input("Enter your Choice : ")
 #Setting Guess counter
-guesses = 0
+def choicer(choice_input):
+    guesses = 0
 
-#For User selecting option A
-if choice_input.lower()=="a:
-    runGame(10,21)
-#For User selecting option B
-if choice_input.lower()=="b":
-    runGame(20,31)
+    #For User selecting option A
+    if choice_input.lower()=="a":
+        runGame(10,21,guesses)
+    #For User selecting option B
+    if choice_input.lower()=="b":
+        runGame(20,31,guesses)
 
-#For User selecting option C
-if choice_input.lower()=="c":
-    runGame(30,41)
+    #For User selecting option C
+    if choice_input.lower()=="c":
+        runGame(30,41,guesses)
 
-#For User selecting option D
-if choice_input.lower()== "d":
-    runGame(40,51)
+    #For User selecting option D
+    if choice_input.lower()== "d":
+        runGame(40,51,guesses)
 
+    else:
+        print("Wrong Choice")
+        print("Option A: 10-20","Option B: 20-30", "Option C: 30-40", "Option D: 40-50", sep = '\n')
+        choice_input = input("Enter your Choice : ")
+        choicer(choice_input)
+
+choicer(choice_input)
