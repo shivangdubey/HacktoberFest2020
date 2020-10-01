@@ -1,5 +1,20 @@
 import random
 import math
+
+#function definitions
+
+def runGame(start, stop):
+    answer = random.randint(start, stop)
+    while guesses < 5:
+        user_input = int(input("Enter your Guess : "))
+        if user_input == answer:
+            print("Congratulations " + user_name + " you did it.")
+            break
+        elif user_input > answer:
+            print("Oh! You guessed higher, try again!")
+        elif user_input < answer:
+            print("Oh! You guessed lower, try again!")
+
 #Welcome Message
 print("Welcome to the Guess Game")
 
@@ -15,53 +30,17 @@ choice_input = input("Enter your Choice : ")
 guesses = 0
 
 #For User selecting option A
-if choice_input== "A" or choice_input== "a":
-    answer_a = random.randint(10, 21)
-    while guesses < 5:
-        user_input = int(input("Enter your Guess : "))
-        if user_input == answer_a:
-            print("Congratulations " + user_name + " you did it.")
-            break
-        elif user_input > answer_a:
-            print("Oh! You guessed higher, try again!")
-        elif user_input < answer_a:
-            print("Oh! You guessed lower, try again!")
-
+if choice_input.lower()=="a:
+    runGame(10,21)
 #For User selecting option B
-if choice_input == "B" or choice_input=="b":
-    answer_b = random.randint(20, 31)
-    while guesses < 5:
-        user_input = int(input("Enter your Guess : "))
-        if user_input == answer_b:
-            print("Congratulations " + user_name + " you did it.")
-            break
-        elif user_input > answer_b:
-            print("Oh! You guessed higher, try again!")
-        elif user_input < answer_b:
-            print("Oh! You guessed lower, try again!")
+if choice_input.lower()=="b":
+    runGame(20,31)
 
 #For User selecting option C
-if choice_input == "C" or choice_input=="c":
-    answer_c = random.randint(30,  41)
-    while guesses < 5:
-        user_input = int(input("Enter your Guess : "))
-        if user_input == answer_c:
-            print("Congratulations " + user_name + " you did it.")
-            break
-        elif user_input > answer_c:
-            print("Oh! You guessed higher, try again!")
-        elif user_input < answer_c:
-            print("Oh! You guessed lower, try again!")
+if choice_input.lower()=="c":
+    runGame(30,41)
 
 #For User selecting option D
-if choice_input == "D" or choice_input== "d":
-    answer_d = random.randint(40, 51)
-    while guesses < 5:
-        user_input = int(input("Enter your Guess : "))
-        if user_input == answer_d:
-            print("Congratulations " + user_name + " you did it.")
-            break
-        elif user_input > answer_d:
-            print("Oh! You guessed higher, try again!")
-        elif user_input < answer_d:
-            print("Oh! You guessed lower, try again!")
+if choice_input.lower()== "d":
+    runGame(40,51)
+
