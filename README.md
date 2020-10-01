@@ -2,7 +2,9 @@
 Repository to let enthusiasts create issues and pull requests for the Open Source event.
 
 About the repository:
-It is a basic Number Guessing Game, created in Python3.
+There are 2 scripts in this repository:
+1) Basic Number Guessing Game, created in Python3
+2) Receipt Generator for Shopping bills
 
 *Libraries/Tools used:
 1) Random package
