@@ -15,6 +15,15 @@ There are 2 scripts in this repository:
 2) While loop
 3) If-Else
 
+
+*How The GuessGame Works:
+
+1)step one: Add your name.
+
+2)step two:select an option to guess a number
+
+3)step three: the game starts start guessing the numbers 
+
 **Screenshot**
 
 ![](images/game.jpg)
