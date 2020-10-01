@@ -14,13 +14,9 @@ Repository to let enthusiasts create issues and pull requests for the Open Sourc
 1) While loop
 2) If-Else
 
-
-## How The GuessGame Works:
-
+## How The Guess Game Works:
 1)Step One: Add your name.
-
 2)Step Two: Select an option to guess a number.
-
 3)Step Three: The game starts to guessing the numbers. 
 
 **Screenshot**
