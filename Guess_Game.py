@@ -15,6 +15,7 @@ def runGame(start, stop,guesses):
             print("Um! You Guessed Little High, try again!")
         elif user_input < answer:
             print("Oh! You guessed Bit Lower, Try again!")
+        print("Predicted Answer was : {answer}")
 
 #Welcome Message
 print("Welcome to Guess Game")
@@ -49,7 +50,7 @@ def choicer(choice_input):
     
     #For User selecting option E
     if choice_input.lower()== "e":
-        exiit()
+        exit()
 
     else:
         print("Wrong Choice")
