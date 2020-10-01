@@ -56,8 +56,9 @@ p=tkinter.Button(root,text=" - ",font=("bold",20),command=lambda:show("-"),bg="l
 q=tkinter.Button(root,text=" + ",font=("bold",20),command=lambda:show("+"),bg="lightblue",bd=5)
 r=tkinter.Button(root,text="      =      ",font=("bold",20),command=equal,bg="lightblue",bd=5)
 s=tkinter.Button(root,text=" 0 ",font=("bold",20),command=lambda:show(0),bg="lightblue",bd=5)
-t=tkinter.Button(root,text=" . ",font=("bold",20),command=lambda:show("."),bg="lightblue",bd=5
-                 )
+t=tkinter.Button(root,text=" . ",font=("bold",20),command=lambda:show("."),bg="lightblue",bd=5)
+u=tkinter.Button(root,text=" ** ",font=("bold",20),command=lambda:show("**"),bg="lightblue",bd=5)
+
 b.place(x=10,y=90)
 f.place(x=10,y=170)
 i.place(x=10,y=270)
@@ -78,4 +79,5 @@ e.place(x=300,y=90)
 o.place(x=300,y=170)
 p.place(x=300,y=270)
 q.place(x=300,y=370)
+u.place(x=300,y=470)
 root.mainloop()
