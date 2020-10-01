@@ -49,8 +49,8 @@ It is more relevant and easy to use for an user.
 
 
 **Screenshots**
-![Input Given](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/input.jpg)
-![Obtained Output](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/output.jpg)
+![Input Given](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/input.png)
+![Obtained Output](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/output.png)
 
 
 ### Development
