@@ -81,12 +81,14 @@ def guess_number(user1):
     if guesses>=5:
         print("Game Over")
 
-    # For User selecting option A
-    if choice_input.lower() == "a":
-        runGame(10, 21, guesses)
-    # For User selecting option B
-    if choice_input.lower() == "b":
-        runGame(20, 31, guesses)
+ debug-branch
+#For User selecting option A
+if choice_input.lower()=="a":
+    runGame(10,21,guesses)
+#For User selecting option B
+if choice_input.lower()=="b":
+    runGame(20,31,guesses)
+ master
 
     # For User selecting option C
     if choice_input.lower() == "c":
