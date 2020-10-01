@@ -23,17 +23,22 @@ def guess_number(user1):
     elif user1== "D":
         answer_user1 = random.randint(40, 51)
     while guesses < 5:
-        user_input = int(input("Enter your Guess : "))
-        if user_input == answer_user1:
-            print("Congratulations " + user_name + " you did it.")
-            break
-        elif user_input > answer_user1:
-            print("Oh! You guessed higher, try again!")
-        elif user_input < answer_user1:
-            print("Oh! You guessed lower, try again!")
-        guesses=guesses+1
-        print(f"No of guesses left {5-guesses}")
-    if guesses>5:
+        user_input = input("Enter your Guess : ")
+        try:
+            user_input=int(user_input)
+            if user_input == answer_user1:
+                print("Congratulations " + user_name + " you did it.")
+                break
+            elif user_input > answer_user1:
+                print("Oh! You guessed higher, try again!")
+            elif user_input < answer_user1:
+                print("Oh! You guessed lower, try again!")
+            guesses=guesses+1
+            print(f"No of guesses left {5-guesses}")
+        except ValueError:
+            print("Pls Input Intergers only! TRY AGAIN")
+            continue
+    if guesses>=5:
         print("Game Over")
 
 
