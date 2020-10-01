@@ -15,7 +15,7 @@ choice_input = input("Enter your Choice : ")
 guesses = 0
 
 #For User selecting option A
-if choice_input== "A" or choice_input== "a":
+if choice_input.lower()== "a":
     answer_a = random.randint(10, 21)
     while guesses < 5:
         user_input = int(input("Enter your Guess : "))
@@ -28,7 +28,7 @@ if choice_input== "A" or choice_input== "a":
             print("Oh! You guessed lower, try again!")
 
 #For User selecting option B
-if choice_input == "B" or choice_input=="b":
+if choice_input.lower()=="b":
     answer_b = random.randint(20, 31)
     while guesses < 5:
         user_input = int(input("Enter your Guess : "))
@@ -41,7 +41,7 @@ if choice_input == "B" or choice_input=="b":
             print("Oh! You guessed lower, try again!")
 
 #For User selecting option C
-if choice_input == "C" or choice_input=="c":
+if choice_input.lower()=="c":
     answer_c = random.randint(30,  41)
     while guesses < 5:
         user_input = int(input("Enter your Guess : "))
@@ -54,7 +54,7 @@ if choice_input == "C" or choice_input=="c":
             print("Oh! You guessed lower, try again!")
 
 #For User selecting option D
-if choice_input == "D" or choice_input== "d":
+if choice_input.lower()== "d":
     answer_d = random.randint(40, 51)
     while guesses < 5:
         user_input = int(input("Enter your Guess : "))
