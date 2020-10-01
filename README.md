@@ -10,7 +10,7 @@ There are 2 scripts in this repository:
 1) Random package
 
 *Concepts used:
-1) Randon package
+1) Random package
 2) While loop
 3) If-Else
 
