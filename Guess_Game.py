@@ -23,9 +23,9 @@ if choice_input == "A" or "a":
         if user_input == answer_a:
             print("Congratulations " + user_name + " you did it")
             break
-        else user_input > answer_a:
+        elif user_input > answer_a:
             print("Oh! You guessed higher, try again!")
-        else user_input < answer_a:
+        elif user_input < answer_a:
             print("Oh! You guessed lower, try again!")
 
 #For User selecting option B
@@ -38,7 +38,7 @@ if choice_input == "B" or "b":
             break
         elif user_input > answer_b:
             print("Oh! You guessed higher, try again!")
-        else user_input < answer_b:
+        elif user_input < answer_b:
             print("Oh! You guessed lower, try again!")
 
 #For User selecting option C
@@ -62,7 +62,7 @@ if choice_input == "D" or "d":
         if user_input == answer_d:
             print("Congratulations " + user_name + " you did it")
             break
-        else user_input > answer_d:
+        elif user_input > answer_d:
             print("Oh! You guessed higher, try again!")
-        else user_input < answer_d:
+        elif user_input < answer_d:
             print("Oh! You guessed lower, try again!")
