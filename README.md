@@ -1,21 +1,21 @@
 # HacktoberFest2020
 Repository to let enthusiasts create issues and pull requests for the Open Source event.
 
-##About the Repository:
+## About the Repository:
 (There are 2 scripts in this repository)
 1) Basic Number Guessing Game, created in Python3
 2) Receipt Generator for Shopping bills
-
-##Libraries/Tools used:
+ 
+## Libraries/Tools used:
 1) Random package
 2) Math package
 
-##Concepts used:
+## Concepts used:
 1) While loop
 2) If-Else
 
 
-##How The GuessGame Works:
+## How The GuessGame Works:
 
 1)Step One: Add your name.
 
