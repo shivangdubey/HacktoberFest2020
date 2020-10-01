@@ -4,7 +4,7 @@ import math
 print("Welcome to the Guess Game")
 
 #Getting Player Name and options to play
-user_name = input("Enter your name")
+user_name = input("Enter your name: ")
 
 #Getting Choices
 print(user_name + " enter the choice between which you wish to guess")
@@ -19,7 +19,7 @@ guesses = 0
 if choice_input.lower()=="a":
     answer_a = random.randint(10, 21)
     while guesses < 5:
-        user_input = int(input("Enter your Guess"))
+        user_input = int(input("Enter your Guess: "))
         if user_input == answer_a:
             print("Congratulations " + user_name + " you did it")
             break
@@ -32,7 +32,7 @@ if choice_input.lower()=="a":
 if choice_input.lower() == "b":
     answer_b = random.randint(20, 31)
     while guesses < 5:
-        user_input = int(input("Enter your Guess"))
+        user_input = int(input("Enter your Guess: "))
         if user_input == answer_b:
             print("Congratulations " + user_name + " you did it")
             break
@@ -45,7 +45,7 @@ if choice_input.lower() == "b":
 if choice_input.lower() == "c":
     answer_c = random.randint(30,  41)
     while guesses < 5:
-        user_input = int(input("Enter your Guess"))
+        user_input = int(input("Enter your Guess: "))
         if user_input == answer_c:
             print("Congratulations " + user_name + " you did it")
             break
@@ -58,7 +58,7 @@ if choice_input.lower() == "c":
 if choice_input.lower() =="d":
     answer_d = random.randint(40, 51)
     while guesses < 5:
-        user_input = int(input("Enter your Guess"))
+        user_input = int(input("Enter your Guess: "))
         if user_input == answer_d:
             print("Congratulations " + user_name + " you did it")
             break
