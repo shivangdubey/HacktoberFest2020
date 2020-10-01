@@ -20,9 +20,9 @@ There are 2 scripts in this repository:
 
 1)step one: Add your name.
 
-2)step two:select an option to guess a number
+2)step two: Select an option to guess a number.
 
-3)step three: the game starts start guessing the numbers 
+3)step three: The game will start, now start guessing the number. 
 
 **Screenshot**
 
