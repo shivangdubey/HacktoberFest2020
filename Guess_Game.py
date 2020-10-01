@@ -7,6 +7,7 @@ def runGame(start, stop,guesses):
     answer = random.randint(start, stop)
     while guesses < 5:
         user_input = int(input("Guess Something : "))
+        guesses += 1;
         if user_input == answer:
             print("Hurray " + user_name + " You Have Done It.")
             break
@@ -24,7 +25,8 @@ user_name = input("Enter your Name : ")
 #Getting Choices
 print(user_name + " What Do You Wish To Guess? : ")
 print("You have got Infinite Chances, Relax!")
-print("Option A: 10-20","Option B: 20-30", "Option C: 30-40", "Option D: 40-50", sep = '\n')
+print("================")
+print("Option A: 10-20","Option B: 20-30", "Option C: 30-40", "Option D: 40-50","Option E: Exit game","================", sep = '\n')
 choice_input = input("Enter your Choice : ")
 #Setting Guess counter
 def choicer(choice_input):
@@ -44,6 +46,10 @@ def choicer(choice_input):
     #For User selecting option D
     if choice_input.lower()== "d":
         runGame(40,51,guesses)
+    
+    #For User selecting option E
+    if choice_input.lower()== "e":
+        exiit()
 
     else:
         print("Wrong Choice")
