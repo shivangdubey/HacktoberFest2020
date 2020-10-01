@@ -20,7 +20,7 @@ if choice_input == "A" or "a":
     answer_a = random.randint(10, 21)
     while guesses < 5:
         user_input = int(input("Enter your Guess"))
-        if user_input = answer_a:
+        if user_input == answer_a:
             print("Congratulations " + user_name + " you did it")
             break
         else user_input > answer_a:
@@ -33,7 +33,7 @@ if choice_input == "B" or "b":
     answer_b = random.randint(20, 31)
     while guesses < 5:
         user_input = int(input("Enter your Guess"))
-        if user_input = answer_b:
+        if user_input == answer_b:
             print("Congratulations " + user_name + " you did it")
             break
         elif user_input > answer_b:
@@ -46,7 +46,7 @@ if choice_input == "C" or "c":
     answer_c = random.randint(30,  41)
     while guesses < 5:
         user_input = int(input("Enter your Guess"))
-        if user_input = answer_c:
+        if user_input == answer_c:
             print("Congratulations " + user_name + " you did it")
             break
         elif user_input > answer_c:
@@ -59,7 +59,7 @@ if choice_input == "D" or "d":
     answer_d = random.randint(40, 51)
     while guesses < 5:
         user_input = int(input("Enter your Guess"))
-        if user_input = answer_d:
+        if user_input == answer_d:
             print("Congratulations " + user_name + " you did it")
             break
         else user_input > answer_d:
