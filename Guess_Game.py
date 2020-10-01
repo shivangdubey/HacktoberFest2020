@@ -30,7 +30,7 @@ choice_input = input("Enter your Choice : ")
 guesses = 0
 
 #For User selecting option A
-if choice_input.lower()=="a:
+if choice_input.lower()=="a":
     runGame(10,21)
 #For User selecting option B
 if choice_input.lower()=="b":
