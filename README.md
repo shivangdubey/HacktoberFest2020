@@ -1,6 +1,9 @@
 # HacktoberFest2020
 Repository to let enthusiasts create issues and pull requests for the Open Source event.
 
+## IMPORTANT
+Any Pull request without details about the commits won't be accepted, please mention changes applied for clarity. 
+
 ## About the Repository:
 (There are 2 scripts in this repository)
 1) Basic Number Guessing Game, created in Python3
