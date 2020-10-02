@@ -1,149 +1,48 @@
+# Imports.
 import random
-import math
 
+# Welcome message.
+print("Welcome to the guessing game!")
 
+# Get player's name.
+name = input("What is your name?: ")
 
-# runGame function which is responsible for game termination a
-def runGame(start, stop, guesses):
-    answer = random.randint(start, stop)
-    while guesses < 5:
-        user_input = int(input("Guess Something : "))
-        if user_input == answer:
-            print("Hurray " + user_name + " You Have Done It.")
-            break
-        elif user_input > answer:
-            print("Um! You Guessed Little High, try again!")
-        elif user_input < answer:
-            print("Oh! You guessed Bit Lower, Try again!")
+# Set minimum and maximum to None to allow us to perform a for loop.
+minimum = None
+maximum = None
 
+# Ask the user to enter a minimum and a maximum number.
+## One would think that it would be better to have both inputs in the same while loop however if the user
+## gets the maximum number wrong they would have to renter the minimum number then do the maximum number again.
+while minimum == None: 
+    try:
+        minimum = int(input("Please enter a minimum number: "))
+    except ValueError:
+        print("Please provide a numeric number!")
+while maximum == None:
+    try:
+        maximum = int(input("Please enter a maximum number: "))
+    except ValueError:
+        print("Please provide a numeric number!")
 
-# Welcome Message
-print("Welcome to Guess Game")
+    # If the minimum number is greater then the maximum ask the user to enter a new maximum.
+    if maximum < minimum:
+        print(f"Please provide a number greater than {minimum}!")
+        maximum = None
 
-# Getting Player Name and options to play
+# Generate the number by doing randint.
+number = random.randint(minimum, maximum)
+
 while True:
-    # checking whether input is integer.
-    user_name = input("Enter your Name : ")
-    if user_name.isdigit():
-        print("Please enter a valid name")
-        continue
 
-    else:
+    # If the guess isn't a number ask them to provide a number.
+    try:
+        guess = int(input("Please provide a guess: "))
+    except ValueError:
+        print("Please provide a numeric number!")
+
+    # If the guess is the number let them know, otherwise tell them if they're too hugh or too low.
+    if guess == number:
+        print(f"Nice job {name}, you guessed the right number!")
         break
-
-
-# Getting Choices
-print(user_name.upper() + " What Do You Wish To Guess? : ")
-print("You have got Infinite Chances, Relax!")
-print("Option A: 10-20", "Option B: 20-30",
-      "Option C: 30-40", "Option D: 40-50", sep='\n')
-choice_input = input("Enter your Choice : ")
-# Setting Guess counter
-
-
-def choicer(choice_input):
-#Welcome Message
-print("Welcome to the Guess Game")
-
-# Getting Player Name and options to play
-user_name = input("Enter your name : ")
-
-
-def getMode():
-    print("Option A: Easy", "Option B: Hard", sep='\n')
-    mode = input("select mode:").upper()
-    if mode == 'A':
-        mode = "Easy"
-    elif mode == 'B':
-        mode = "Hard"
-    print(mode)
-    if mode != 'Easy' and mode != 'Hard':
-        print("oops wrong choise!")
-        getMode()
-    return mode
-
-
-mode = getMode()
-
-# Getting Choices
-print(user_name + " enter the choice between which you wish to guess : ")
-print("You have got infinite chances, chill and  all the best !")
-print("Option A: 10-20", "Option B: 20-30",
-      "Option C: 30-40", "Option D: 40-50", sep='\n')
-
-# Setting Guess counter
-
-
-def guess_number(user1):
-    guesses = 0
-
-    def generateAnswerNumber(user1):
-        if user1 == "A":
-            answer_user1 = random.randint(10, 21)
-        elif user1 == "B":
-            answer_user1 = random.randint(20, 31)
-        elif user1 == "C":
-            answer_user1 = random.randint(30, 41)
-        elif user1 == "D":
-            answer_user1 = random.randint(40, 51)
-        else:
-            print("oops wrong choice!")
-            user1 = input("Enter your Choice : ").upper()
-            guess_number(user1)
-        return answer_user1
-
-    answer_user1 = generateAnswerNumber(user1)
-
-    while guesses < 5:
-        user_input = input("Enter your Guess : ")
-
-        try:
-            user_input = int(user_input)
-            if user_input == answer_user1:
-                print("Congratulations " + user_name + " you did it.")
-                break
-            elif user_input > answer_user1:
-                print("Oh! You guessed higher, try again!")
-            elif user_input < answer_user1:
-                print("Oh! You guessed lower, try again!")
-            guesses = guesses+1
-            print(f"No of guesses left {5-guesses}")
-            if mode == 'Easy':
-                pass
-            elif mode == 'Hard' and guesses % 2 == 0:
-                answer_user1 = generateAnswerNumber(user1)
-        except ValueError:
-            print("Pls Input Intergers only! TRY AGAIN")
-            continue
-
-    if guesses >= 5:
-        print("Game Over")
-
- debug-branch
-#For User selecting option A
-if choice_input.lower()=="a":
-    runGame(10,21,guesses)
-#For User selecting option B
-if choice_input.lower()=="b":
-    runGame(20,31,guesses)
- master
-
-    # For User selecting option C
-    if choice_input.lower() == "c":
-        runGame(30, 41, guesses)
-
-    # For User selecting option D
-    if choice_input.lower() == "d":
-        runGame(40, 51, guesses)
-
-    else:
-        print("Option A: 10-20", "Option B: 20-30",
-              "Option C: 30-40", "Option D: 40-50", sep='\n')
-        choice_input = input("Enter your Choice : ")
-        choicer(choice_input)
-
-choice_input = input("Enter your Choice : ").upper()
-choicer(choice_input)
-choice_input = input("Enter your Choice : ")
-
-guess_number(choice_input)
+    print("Too low!" if guess < number else "Too high!")
