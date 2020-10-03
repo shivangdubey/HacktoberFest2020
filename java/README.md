@@ -7,5 +7,5 @@ This folder holds all the **Java programs** added by developers.
     - fibonacci_using_dp 
     - To find nth fibonacci number using Dynamic Programming
     - Bubble sort algorithm implementation in Java
-    - Selection sort algorithm implementation
+    - Selection sort algorithm implementation in Java
 
