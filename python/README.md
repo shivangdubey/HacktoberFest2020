@@ -18,3 +18,5 @@ Health_Reminder.py - A script to remind yourself to do healthy things every once
 receiptgenerator.py - A receipt generator
 
 snake_game.py - Snake written in Python using PyGame
+
+dinoBot.py - Google's Dinosaur Game Bot written in Python
