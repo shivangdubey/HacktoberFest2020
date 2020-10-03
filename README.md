@@ -18,9 +18,9 @@ Any Pull request without details about the commits won't be accepted, please men
 2) If-Else
 
 ## How The Guess Game Works:
-1)Step 1: Add your name   
-2)Step 2: Select an option to guess a number   
-3)Step 3: The game starts to guessing the numbers   
+1) Step 1: Add your name   
+2) Step 2: Select an option to guess a number   
+3) Step 3: The game starts to guessing the numbers   
 
 **Screenshot**
 
