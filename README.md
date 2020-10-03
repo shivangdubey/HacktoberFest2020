@@ -27,6 +27,7 @@ Sign up [Here](https://hacktoberfest.digitalocean.com)
 
 ## Languages Used Here:
 
+- [C++](https://github.com/shivangdubey/HacktoberFest2020/tree/master/DP%20Basics%20Using%20CPP)
 - [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
 - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
 - [Python](https://github.com/shivangdubey/HacktoberFest2020/tree/master/python)
