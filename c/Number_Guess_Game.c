@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <math.h>
 #include <string.h>
 #endif
 
@@ -9,6 +11,8 @@
 #include <stdio.h>
 #include <ncurses.h>
 #include <stdlib.h>
+#include <time.h>
+#include <math.h>
 #include <string.h>
 #endif
 
@@ -16,28 +20,60 @@ int menu();
 
 int main()
 {
-    int num, option=0;
-    char* options[2];
+    int num, menu_state1=0, menu_state2=0, loop=1;
+    char* state1_options[2];
+    char* state2_options[3];    
 
-    options[0] = "start";
-    options[1] = "select mode";
+    // menu screen one
+    state1_options[0] = "start";
+    state1_options[1] = "select mode";
+
+    // menu screen two
+    state2_options[0] = "easy";
+    state2_options[1] = "medium";
+    state2_options[2] = "hard";
+
+    // Seed value for random number
+    srand((unsigned) time(0));
 
     printf("Welcome to the Game!\n");
-    while(1) 
+    printf("To quit press q\n");
+    while(loop) 
     {
-        option = menu(2, options);
-        switch (option)
+        menu_state1 = menu(2, state1_options);
+        switch (menu_state1)
         {
-        default:
+        case 0:
+            loop = 0;
+            break;
+        case 1:
+            menu_state2 = menu(3, state2_options);
             break;
         }
-
     }
 
-    printf("Enter a number to start the game:- ");
-    scanf(" %d", &num);
-    printf("You entered %d\n", num);
+    // Set the dificulty level based on the menu_state2
+    int tries = menu_state2 == 1 ? 100 : (menu_state2 == 2 ? 50 : 10);
+    // generate the random number
+    int random = rand() % (int) pow(10, 3-menu_state2);
 
+    printf("\nEnter a number between %d\n", tries*10-1);
+    printf("Enter a number to start the game:- ");
+    for (size_t i = 0; i < tries; i++)
+    {
+        scanf(" %d", &num);
+        printf("You entered %d\n", num);
+
+        if (num > random)
+            printf("Lower!\n");
+        else if (num < random)
+            printf("Higher!\n");
+        else {
+            printf("\nCongratulations You WON!!!!!\n");
+            exit(EXIT_SUCCESS);
+        }
+    }
+    
     return 0;
 }
 
@@ -52,6 +88,7 @@ int menu(int no_of_options, char* options[])
     // "a M" for KEY_RIGHT
     // lookup on Grey codes for more info
     int option=1;
+    system("clear");
     while(1)
     {
         for (int i=0; i<no_of_options; i++)
@@ -85,11 +122,9 @@ int menu(int no_of_options, char* options[])
         }
 
         if (menu_ch1 == 'q')
-            break;
-        else if (menu_ch1 == ' ')
-        {
-            menu()
-        }
+            exit(EXIT_SUCCESS);
+        else if (menu_ch1 == 13)
+            return option;
 
         //printf("\e[1;1H\e[2J");
         system("clear");
