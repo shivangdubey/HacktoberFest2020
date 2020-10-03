@@ -25,7 +25,7 @@ This repository allows any type of project from any type of language to be added
 
 Sign up [Here](https://hacktoberfest.digitalocean.com)
 
-## Languages Used Here:
+## Languages That Are Used Here:
 
 - [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
 - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
