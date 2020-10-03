@@ -55,7 +55,7 @@ int main()
     // Set the dificulty level based on the menu_state2
     int tries = menu_state2 == 1 ? 100 : (menu_state2 == 2 ? 50 : 10);
     // generate the random number
-    int random = rand() % (int) pow(10, 3-menu_state2);
+    int random = rand() % (tries*10);
 
     printf("\nEnter a number between %d\n", tries*10-1);
     printf("Enter a number to start the game:- ");
