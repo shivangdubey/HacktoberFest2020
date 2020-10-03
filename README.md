@@ -30,7 +30,7 @@ Sign up [Here](https://hacktoberfest.digitalocean.com)
 - [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
 - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
 - [Python](https://github.com/shivangdubey/HacktoberFest2020/tree/master/python)
-
+- [C++](https://github.com/shivangdubey/HacktoberFest2020/tree/master/cpp)
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
