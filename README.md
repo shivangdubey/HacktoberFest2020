@@ -30,7 +30,7 @@ Sign up [Here](https://hacktoberfest.digitalocean.com)
 - [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
 - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
 - [Python](https://github.com/shivangdubey/HacktoberFest2020/tree/master/python)
-
+- [C++](https://github.com/shivangdubey/HacktoberFest2020/tree/master/cpp)
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
@@ -121,8 +121,5 @@ members of the project's leadership.
 
 ### Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at [http://contributor-covenant.org/version/1/4]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 1.4,
+available at https://www.contributor-covenant.org/version/1/4/code-of-conduct/
