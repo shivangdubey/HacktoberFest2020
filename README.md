@@ -34,8 +34,8 @@ Pull requests should include the following:
 - Place your project in a folder with a README and information on the project
 
 
-### Languages Used Already:
+### Languages:
 
-- C
-- Java
-- Python
+- [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
+- [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
+- [Python](https://github.com/shivangdubey/HacktoberFest2020/tree/master/python)
