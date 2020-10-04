@@ -29,19 +29,19 @@ This repository allows any type of project from any type of language to be added
 - [C](https://github.com/shivangdubey/HacktoberFest2020/tree/master/c)
 - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/java)
 - [Python](https://github.com/shivangdubey/HacktoberFest2020/tree/master/python)
-- [C++](https://github.com/shivangdubey/HacktoberFest2020/tree/master/cpp)
+
 ## Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+email, or any other method with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a
    build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
+2. Update the README.md with details of changes to the interface, this includes new environment
    variables, exposed ports, useful file locations and container parameters.
 
 Pull requests should include the following:
