@@ -24,3 +24,6 @@ dinoBot.py - Google's Dinosaur Game Bot written in Python
 morsecode-translator.py - A program to translate morsecode to english and vice versa
 
 simplelinearregression.py - A Simple Linear Regression For Predicting a gold price
+
+motion_detection.py - python program to detect motion in videos .
+
