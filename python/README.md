@@ -27,3 +27,4 @@ simplelinearregression.py - A Simple Linear Regression For Predicting a gold pri
 
 motion_detection.py - python program to detect motion in videos .
 
+image_resolution.py - A program to determine the resolution of an image in JPEG format.
