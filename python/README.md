@@ -25,5 +25,12 @@ morsecode-translator.py - A program to translate morsecode to english and vice v
 
 simplelinearregression.py - A Simple Linear Regression For Predicting a gold price
 
+motion_detection.py - python program to detect motion in videos .
+
+face.py - A script to detect faces in photos .
+
+convert.py - unit(weight) conversion application
+
 web_blocker.pyw - a script to block any website .
+
 
