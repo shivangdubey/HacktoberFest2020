@@ -1,6 +1,9 @@
 # HacktoberFest2020
 Repository to let enthusiasts create issues and pull requests for the Open Source event.
 
+### NOTE
+## No Pull request would be accepted without a brief description about the project or code being pulled. 
+
 ## Table of Contents
 
 -   [About the Repository](#abouttherepository)
