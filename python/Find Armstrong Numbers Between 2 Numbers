@@ -1,0 +1,26 @@
+#Armstrong Number=number of n digits which are equal to sum of nth power of its digits
+#Example=suppose we need to find 153 is armstrong number or not.
+#so for this we need to count number of digits that are 3 
+#then as number of digits are 3 we need to find the value of
+#1 to the power 3,5 to the power 3 and 3 to the power 3
+#and add all three values that are 1+125+27 = 153
+#as the number first taken is same after this procedure that means 153 is a armstrong number
+
+
+
+
+n1=int(input("Enter the first number(for default type=0):"))
+n2=int(input("Enter the second number:"))
+for i in range(n1,n2):
+    num=i
+    result=0
+    n2=len(str(i))
+    while(i!=0):
+        digit=i%10
+        result=result+digit**n2
+        i=i//10
+    if num==result:
+        print(num)
+
+
+#hastag"#" is used to show comments
