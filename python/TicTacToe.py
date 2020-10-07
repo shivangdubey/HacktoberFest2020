@@ -1,4 +1,5 @@
-import sys, pygame
+import sys
+import pygame
 from pygame.locals import *
 
 WHITE = (255, 255, 255)
@@ -33,7 +34,7 @@ def checkWin(colored_boxes, color_index):
         if 0+x in boxes and 1+x in boxes and 2+x in boxes:
             return True
 
-    # check daignols
+    # check diagnols
     if 0 in boxes and 4 in boxes and 8 in boxes:
         return True
     
@@ -77,7 +78,7 @@ while True:
         if event.type==QUIT:
             pygame.quit()
             sys.exit()
-
+#QUIT not defined error
         if event.type == pygame.MOUSEBUTTONDOWN:
             x, y = pygame.mouse.get_pos()
             box = GetBoxAccordingToCoords(coords, x, y)
