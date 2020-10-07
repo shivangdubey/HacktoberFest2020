@@ -12,7 +12,7 @@ while ch> 3 or ch< 1:
    ch = int(input("Enter your valid input here: "))
 if ch == 1:
    choice_name = 'Rock'
-elifch == 2:
+elif ch == 2:
    choice_name = 'paper'
 else:
    choice_name = 'scissor'
