@@ -55,6 +55,7 @@ It is more relevant and easy to use for an user.
 ![Input Given](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/input.png)
 ![Obtained Output](https://github.com/UshasriMavuri1999/HacktoberFest2020/blob/master/images/output.png)
 
+![Alt Text](./images/calculator.gif)
 
 ### Development
 
