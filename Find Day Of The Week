@@ -1,0 +1,20 @@
+#code to find day of the weeek by number
+#Week start from Day 1 to Day 7
+#Week starting from Sunday
+D=int(input("Enter The Number Of The Day In Week:"))
+if D >7 or D==0:
+    print("Invalid Number Entered")
+elif D==1:
+    print("Sunday")
+elif D==2:
+    print("Monday")
+elif D==3:
+    print("Tuesday")
+elif D==4:
+    print("Wednesday")
+elif D==5:
+    print("Thrusday")
+elif D==6:
+    print("Friday")
+elif D==7:
+    print("Saturday")
