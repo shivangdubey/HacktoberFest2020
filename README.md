@@ -1,5 +1,5 @@
 # HacktoberFest2020
-Repository to let enthusiasts create issues and pull requests for the Open Source event.
+Repository to let enthusiasts create issues and the pull requests for the Open Source event.
 
 ### NOTE
 ## No Pull request would be accepted without a brief description about the project or code being pulled. 
@@ -58,6 +58,6 @@ It is more relevant and easy to use for an user.
 
 ### Development
 
-Want to contribute? Great! Please check the ![Contribution guideline](https://github.com/thepurpleowl/HacktoberFest2020/blob/master/CONTRIBUTING.md).  
+Want to contribute? Great! Please see the ![Contribution guideline](https://github.com/thepurpleowl/HacktoberFest2020/blob/master/CONTRIBUTING.md).  
 
 This repository is the starter code for you. Therefore, I would like to accept your pull requests 😎
