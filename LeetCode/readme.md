@@ -7,3 +7,4 @@
   
   At the moment we have solutions for these languages:
   - [Java](https://github.com/shivangdubey/HacktoberFest2020/tree/master/LeetCode/Java)
+  - [Python](https://github.com/shahriar100/HacktoberFest2020/edit/master/LeetCode/Python)
