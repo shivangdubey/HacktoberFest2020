@@ -25,3 +25,10 @@ Problem links:
 - [Subtract the product and sum of digits of an integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer)
 - [Valid paranthesis](https://leetcode.com/problems/valid-paranthesis)
 - [Unique morse code words](https://leetcode.com/problems/unique-morse-code-words)
+- [Unique Paths](https://leetcode.com/problems/unique-paths/)
+- [Sort Colors](https://leetcode.com/problems/sort-colors/)
+- [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+- [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+
+
+
