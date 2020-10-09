@@ -30,3 +30,11 @@
 - **sudoku_gui.py** - python program created using tkinter ( *press space bar to run the alogrithm and complete the game in seconds* )
 
 - **text_translator.py** - a python program for converting text in different languages.
+
+- **face.py** - A script to detect faces in photos .
+
+- **convert.py** - unit(weight) conversion application
+
+- **web_blocker.pyw** - a script to block any website .
+
+
