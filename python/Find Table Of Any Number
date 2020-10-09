@@ -1,0 +1,16 @@
+# Multiplication table (from 1 to 10) in Python
+# To take input from the user
+
+num = int(input("Enter The Number:"))
+
+# Iterate 10 times from i = 1 to n
+#n is the number of range till where you want the table should be printed
+
+n=int(input("Enter The Range Till Where Table Should Be Displayed:"))
+if n==0:
+    print("Invalid Entry")
+
+for i in range(1,n+1):
+   print(num, 'x', i, '=', num*i)
+   
+#code to find table of any number upto any range
