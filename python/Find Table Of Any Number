@@ -3,7 +3,7 @@
 # To take input from the user
 # Iterate n times from i = 1 to n
 #n is the number of range till where you want the table should be printed
-
+#n cannot be zero
 
 
 num = int(input("Enter The Number:"))
