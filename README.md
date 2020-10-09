@@ -59,6 +59,6 @@ It is more relevant and easy to use for an user.
 
 ### Development
 
-Want to contribute? Great! Please check the ![Contribution guideline](https://github.com/thepurpleowl/HacktoberFest2020/blob/master/CONTRIBUTING.md).  
+Want to contribute? Great! Please check the [Contribution guideline](https://github.com/shivangdubey/HacktoberFest2020/blob/master/CONTRIBUTING.md).  
 
 This repository is the starter code for you. Therefore, I would like to accept your pull requests 😎
