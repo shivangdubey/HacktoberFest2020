@@ -1,6 +1,6 @@
 ## SSH connection with Python
 
-![image]()
+![image](https://raw.githubusercontent.com/shivangdubey/HacktoberFest2020/c73a2b5db87c7bc9e49b11ab196e433c346b2b4d/python/SSH%20connection%20with%20Python/main.png)
 
 ### Understanding pxssh
 
@@ -41,5 +41,5 @@ This should work on most Borne/Bash or Csh style shells. That means it doesn't s
 
 ### Code
 
-![code]()
+![code](https://raw.githubusercontent.com/shivangdubey/HacktoberFest2020/c73a2b5db87c7bc9e49b11ab196e433c346b2b4d/python/SSH%20connection%20with%20Python/carbon.png)
 
