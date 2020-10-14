@@ -1,6 +1,6 @@
 # Egg dropping refers to a class of problems in which it is important to find the correct response without exceeding a (low) number of certain failure states.
-In a toy example, there is a tower of nnn floors, and an egg dropper with mmm ideal eggs. The physical properties of the ideal egg is such that it will shatter
-if it is dropped from floor n∗n^*n∗ or above, and will have no damage whatsoever if it is dropped from floor n∗−1n^*-1n∗−1 or below.
+#In a toy example, there is a tower of nnn floors, and an egg dropper with mmm ideal eggs. The physical properties of the ideal egg is such that it will shatter
+#if it is dropped from floor n∗n^*n∗ or above, and will have no damage whatsoever if it is dropped from floor n∗−1n^*-1n∗−1 or below.
 
 # DP solution
 def solvepuzzle(N,k):
