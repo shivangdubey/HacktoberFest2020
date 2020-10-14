@@ -30,4 +30,4 @@ def solvepuzzle(N,k):
         end for
     end for
 
-    return numdrops(N,k)
+    return numdrops(N,k);
