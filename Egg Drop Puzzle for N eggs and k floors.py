@@ -4,30 +4,23 @@
 
 # DP solution
 def solvepuzzle(N,k):
-    for i = 1 to N
-        numdrops(i,1) = 1
-        numdrops(i,0) = 0
-    end for
+    for i in range (1, N):
+        numdrops[i][1] = 1
+        numdrops[i][0] = 0
 
-    for i=1 to k
-        numdrops(1, i) = i
-    end for
+    for i in range(1, k):
+        numdrops[1][i] = i
 
-    for i = 2 to N
-        for j = 2 to k 
+    for i in range(2, N):
+        for j in range(2, k): 
 
-            numdrops[i][j] = ∞
-            minimum = ∞
+            numdrops[i][j] = INF
+            minimum = INF
 
-            for x = 1 to j
-                minimum = min(minimum, 
-                1 + max(numdrops(i-1,x-1),numdrops(i,j-x))
-                )
-            end for
+            for x in range(1, j)
+                minimum = min(minimum, 1 + max(numdrops[i-1][x-1],numdrops[i][j-x]))
 
             numdrops[i][j] = minimum
 
-        end for
-    end for
 
-    return numdrops(N,k);
+    return numdrops[N][k]
