@@ -10,14 +10,14 @@ class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    # def search(t,x):
-    #     if self.root !=None:
-    #         if self.root.data == x:
-    #             return self.root
-    #         elif self.root.data > x:
-    #             return self.search(self.root.left,x)
-    #         else:
-    #             return self.search(self.root.right,x)
+    def search(t,x):
+        if self.root !=None:
+            if self.root.data == x:
+                return self.root
+            elif self.root.data > x:
+                return self.search(self.root.left,x)
+            else:
+                return self.search(self.root.right,x)
 
     def minimum(self, x):
         while x.left != None:
