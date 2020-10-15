@@ -39,7 +39,7 @@ pxssh uses the shell prompt to synchronize output from the remote host. In order
 
 This should work on most Borne/Bash or Csh style shells. That means it doesn't support Windows.
 
-### Code
+### Code for SSH connection
 
 ![code](https://raw.githubusercontent.com/shivangdubey/HacktoberFest2020/c73a2b5db87c7bc9e49b11ab196e433c346b2b4d/python/SSH%20connection%20with%20Python/carbon.png)
 
