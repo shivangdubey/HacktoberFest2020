@@ -28,19 +28,23 @@ int main()
        {
            cout << "Enter element b" << i + 1 << j + 1 << " : ";
            cin >> b[i][j];
+           //adding 2 matrices
+           sum[i][j] = a[i][j] + b[i][j];
+
        }
 
-    // Adding Two matrices
-    for(i = 0; i < r; ++i)
-        for(j = 0; j < c; ++j)
-            sum[i][j] = a[i][j] + b[i][j];
+   
+            
 
     // Displaying the resultant sum matrix.
     cout << endl << "Sum of two matrix is: " << endl;
     for(i = 0; i < r; ++i)
-        for(j = 0; j < c; ++j)
+    {
+    	 for(j = 0; j < c; ++j)
         {
             cout << sum[i][j] << "  ";
-            if(j == c - 1)
-                cout << endl;
+           
         }
+        cout<<"\n";
+    }
+       
