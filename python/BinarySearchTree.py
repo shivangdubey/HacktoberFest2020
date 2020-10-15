@@ -126,4 +126,4 @@ if __name__ == '__main__':
     t.delete(m)
 
     t.inorder(t.root)
-    # t.search(t,150)
+    t.search(t,150)
