@@ -5,6 +5,8 @@ using namespace std;
 
 //check given string is palindrome or not using recursion - abcba
 
+//Time Complexity - O(log N)
+
 bool is_palindrome(string Str,int start,int end)
 {
 
@@ -20,7 +22,6 @@ bool is_palindrome(string Str,int start,int end)
         return true;
     }
     return is_palindrome(Str,start+1,end-1);
-
 }
 
 int main()
@@ -28,7 +29,14 @@ int main()
     string S;
     cout<<"Enter the input string: ";
     getline(cin,S);
-    cout<<is_palindrome(S,0,S.length()-1);
+    int a = is_palindrome(S,0,S.length()-1);
+    if(a==0)
+    {
+        cout<<"The given string is not a Palindrome";
+    }
+    else
+    {
+        cout<<"The given string is Palindrome";
+    }
     return 0;
-
 }
