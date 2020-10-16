@@ -1,8 +1,7 @@
 // Pattern Generator
 
-#include<iostream.h>
-#include<conio.h>
-#include<process.h>
+#include<bits/stdc++.h>
+using namespace std;
 
 void ltrsPtrn(int n)
 {
@@ -34,7 +33,7 @@ void starPtrn(int n)
   int i, j;
   for(i=0; i<n; i++)
   {
-    for(j=0; j<=i; j++)
+    for(j=0; j<=n-i; j++)
     {
       cout<<'*';
     }
@@ -55,9 +54,9 @@ void rvrsPtrn(int n)
   }
 }
 
-void main()
+int main()
 {
-  clrscr();
+  cout << "\033[2J\033[1;1H";
   int n, r;
   char ch;
   cout<<"Enter a number. ";
@@ -82,5 +81,6 @@ void main()
     cin>>ch;
   } while( (ch=='Y') || (ch=='y') );
 
-  getch();
+  
+  return 0;
 }
