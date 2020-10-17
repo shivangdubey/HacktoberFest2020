@@ -38,7 +38,7 @@ def background():
             note.configure(bg="Pink")
 
         window.wait_variable(menu_index)
-
+        background()
 
 
 def new():
