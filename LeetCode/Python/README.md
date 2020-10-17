@@ -29,6 +29,9 @@ Problem links:
 - [Sort Colors](https://leetcode.com/problems/sort-colors/)
 - [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 - [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
-
+- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
+- [Remove Element](https://leetcode.com/problems/remove-element/)
+- [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 
 
