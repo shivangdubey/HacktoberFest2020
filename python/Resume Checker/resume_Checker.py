@@ -2,7 +2,7 @@ import docx2txt
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-resume = docx2txt.process("resume.docx")
+resume = docx2txt.process("resume - for merge.docx")
 
 # Print the resume
 print(resume)
