@@ -21,7 +21,8 @@ class Stack:
 def reverse_str(str):
     s = Stack()
     
-    for i in range(len(str)):
+    inp_len=len(str)
+    for i in range(0,inp_len):
         s.push(str[i])
     rev_str = ''
     while not s.is_empty():
