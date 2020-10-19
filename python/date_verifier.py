@@ -1,6 +1,5 @@
 # Date Verification Module
 
-
 def leap_year(a):
     b = int(a[:4])
     if(b%100 == 0):
@@ -76,4 +75,4 @@ def date_input(): ## Needed to be Recoded also at Line 150 Employee_end
                 else:
                     return (False, verify(a + '/' + b +'/' + c))
 
-print(date_input()) # Further  Computation with the Date (as index 1 element)
+date_input() # Returns index 0 as True/false representing validation of date and index 1 as Date itself in YYYY/MM/DD format
