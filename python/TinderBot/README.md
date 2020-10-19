@@ -2,6 +2,10 @@
 
 Tinderbot to automate swiping on tinder, using PRNG to decide if swiping left or right
 
+### Tinderbot - Screenshot feature
+
+Tinderbot to take scrrenshot of profile and save it in given file location.
+
 ### Dependencies
 * [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/) - Used for controlling the mouse input
 
