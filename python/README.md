@@ -30,4 +30,7 @@
 - **sudoku_gui.py** - python program created using tkinter ( *press space bar to run the alogrithm and complete the game in seconds* )
 
 - **text_translator.py** - a python program for converting text in different languages.
+
 - **Matrixmultusingnumpy.py**- Python program to multiply matrices using numpy.
+
+- **palindrome.py**- Python program to finds the palindrome in one word.
