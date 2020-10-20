@@ -1,46 +1,82 @@
-# A Python3 program to convert min Heap to max Heap  
-  
-# to heapify a subtree with root  
-# at given index  
-def MaxHeapify(arr, i, n): 
-    l = 2 * i + 1
-    r = 2 * i + 2
-    largest = i  
-    if l < n and arr[l] > arr[i]:  
-        largest = l 
-    if r < n and arr[r] > arr[largest]:  
-        largest = r  
-    if largest != i: 
-        arr[i], arr[largest] = arr[largest], arr[i]  
-        MaxHeapify(arr, largest, n) 
-  
-# This function basically builds max heap  
-def convertMaxHeap(arr, n): 
-      
-    # Start from bottommost and rightmost  
-    # internal mode and heapify all  
-    # internal modes in bottom up way  
-    for i in range(int((n - 2) / 2), -1, -1): 
-        MaxHeapify(arr, i, n) 
-  
-# A utility function to print a  
-# given array of given size  
-def printArray(arr, size): 
-    for i in range(size): 
-        print(arr[i], end = " ") 
-    print() 
-  
-# Driver Code 
-if __name__ == '__main__': 
-      
-    # array representing Min Heap  
-    arr = [3, 5, 9, 6, 8, 20, 10, 12, 18, 9]  
-    n = len(arr) 
-  
-    print("Min Heap array : ")  
-    printArray(arr, n)  
-  
-    convertMaxHeap(arr, n)  
-  
-    print("Max Heap array : ")  
-    printArray(arr, n) 
+# return left child of A[i]
+def LEFT(i):
+	return 2 * i + 1
+
+
+# return right child of A[i]
+def RIGHT(i):
+	return 2 * i + 2
+
+
+# Utility function to swap two indices in the list
+def swap(A, i, j):
+
+	temp = A[i]
+	A[i] = A[j]
+	A[j] = temp
+
+
+# Recursive Heapify-down algorithm. The node at index i and
+# its two direct children violates the heap property
+def Heapify(A, i, size):
+
+	# get left and right child of node at index i
+	left = LEFT(i)
+	right = RIGHT(i)
+
+	smallest = i
+
+	# compare A[i] with its left and right child
+	# and find smallest value
+	if left < size and A[left] < A[i]:
+		smallest = left
+
+	if right < size and A[right] < A[smallest]:
+		smallest = right
+
+	# swap with child having lesser value and
+	# call heapify-down on the child
+	if smallest != i:
+		swap(A, i, smallest)
+		Heapify(A, smallest, size)
+
+
+# Constructor (Build-Heap)
+def Convert(A):
+
+	# call heapify starting from last internal node all the
+	# way up to the root node
+	i = (len(A) - 2) // 2
+	while i >= 0:
+		Heapify(A, i, len(A))
+		i = i - 1
+
+
+if __name__ == '__main__':
+
+	"""
+				9
+
+		 4		 7
+
+		1	-2	6	 5
+
+	"""
+
+	# list representing max heap
+	A = [9, 4, 7, 1, -2, 6, 5]
+
+	# build a min heap by initializing it by given list
+	Convert(A)
+
+	# print the Min Heap
+	"""
+			-2
+
+		1		 5
+
+	9	 4	6	 7
+
+	"""
+
+	print(A)
