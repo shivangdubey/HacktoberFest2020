@@ -42,4 +42,3 @@ class Solution:
         return stones[0]
 
 
-print(Solution().lastStoneWeight([1, 2, 3, 4, 5]))
