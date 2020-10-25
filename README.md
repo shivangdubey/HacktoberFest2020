@@ -1,5 +1,6 @@
 # HacktoberFest2020
-Repository to let enthusiasts create issues and pull requests for the Open Source event.
+Repository to let enthusiasts create issues and pull requests for the Open Source event [Hacktoberfest](https://hacktoberfest.digitalocean.com)
+
 
 ### NOTE
 ## No Pull request would be accepted without a brief description about the project or code being pulled. 
@@ -40,11 +41,11 @@ Repository to let enthusiasts create issues and pull requests for the Open Sourc
 
 ### Calculator:
 
-This Program run on both Windows and Linux operating system by using pycharm, anaconda 3 or all. other python editor with the python version 3.x.
+This Program runs on both Windows and Linux operating systems by using pycharm, anaconda 3 or both. other python editor with the python version 3.x.
 This software is developed by python 3.x.
-Used tkinter module for the Graphical User Interface.
-It is more secure which means you may not enter other anything except the numerical values.
-It is more relevant and easy to use for an user.
+I've used tkinter module for the Graphical user interface.
+It is more secure which means you need not enter other anything except the numerical values.
+It is more relevant and easy to use for users.
 
 1) It performs Addition, Subtraction, Multiplication and Division
 2) If you want to clear the recent entered value, you should click the button **C**

@@ -5,7 +5,7 @@ from math import cosh as sec
 from math import sinh as cosec
 from math import tanh as cot
 
-root=Tk()
+root = Tk()
 root.geometry("320x650")
 root.title("Calculator")
 root.config(bg="skyblue")
@@ -16,22 +16,22 @@ def click(event):
     text=event.widget.cget("text")
 
 
-    if text=="=":
+    if text == "=":
         if scvalue.get().isdigit():
             value=int(scvalue.get())
         else:
             try:
-                value=eval(entry_widget.get())
+                value = eval(entry_widget.get())
             except Exception as e:
                 print(e)
-                value="Error" 
+                value = "Error" 
                 tmsg.showinfo("Invalid Input","Please Enter Valid Inputs")
 
         scvalue.set(value)
         entry_widget.icursor(END)
         entry_widget.update()
 
-    elif text== "C":
+    elif text == "C":
         scvalue.set("")
         entry_widget.update()
 
@@ -56,14 +56,14 @@ scvalue.set("")
 entry_widget = Entry(root,textvar=scvalue,font="lucida 20 bold",borderwidth=4,relief=SUNKEN)
 entry_widget.pack(pady=15,fill=X,padx=5,ipadx=10,ipady=3)
 
-list1=9
-outer_frame=Frame(root,bg="blue",relief=SUNKEN,borderwidth=6)
+list1 = 9
+outer_frame = Frame(root,bg="blue",relief=SUNKEN,borderwidth=6)
 
 symbols = ["+", "-", "*"]
 for i in range(3):
-    f= Frame(outer_frame,bg="grey")
+    f = Frame(outer_frame,bg="grey")
     
-    b=Button(f,text=list1,font="lucida 16 ",height=2, width=4)
+    b = Button(f,text=list1,font="lucida 16 ",height=2, width=4)
     b.pack(padx=5,pady=5,side=LEFT)
     b.bind("<Button-1>" ,click)
 
@@ -71,15 +71,15 @@ for i in range(3):
     b1.pack(padx=5,pady=5,side=LEFT)
     b1.bind('<Button-1>',click)
 
-    b2= Button(f,text=list1-2,font="lucida 16",height=2, width=4)
+    b2 = Button(f,text=list1-2,font="lucida 16",height=2, width=4)
     b2.pack(padx=5,pady=5,side=LEFT)
     b2.bind('<Button-1>',click)
 
-    b3= Button(f,text=symbols[i],font="lucida 16",height=2, width=4)
+    b3 = Button(f,text=symbols[i],font="lucida 16",height=2, width=4)
     b3.pack(padx=5,pady=5,side=LEFT)
     b3.bind('<Button-1>',click)
 
-    list1=list1-3
+    list1 -= 3
     f.pack()
 
 def row(a,item,c, d):
@@ -103,7 +103,7 @@ def row(a,item,c, d):
 
 outer_frame.pack(padx=10,pady=10)
 
-list1=["C", "0", ".", "/", "00", "←", "=", "%"]
+list1 = ["C", "0", ".", "/", "00", "←", "=", "%"]
 row(list1[0],list1[1],list1[2], list1[3])
 row(list1[4],list1[5],list1[6], list1[7])
 
@@ -120,7 +120,7 @@ def plot_more():
     
     f = Frame(frame, bg = "grey",)
     for j in range(4):
-        b= Button(f,text = extra_buttons[j+4], font = "lucida 16", height = 2, width = 4)
+        b = Button(f,text = extra_buttons[j+4], font = "lucida 16", height = 2, width = 4)
         b.pack(side = LEFT, padx = 5, pady = 5)
         b.bind("<Button-1>", click)
     f.pack()
