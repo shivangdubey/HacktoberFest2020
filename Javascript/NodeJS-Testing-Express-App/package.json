@@ -1,0 +1,28 @@
+{
+    "name": "restful-api-testing",
+    "version": "1.0.0",
+    "description": "Restful API Testing with Mocha and Chai",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha || exit 0"
+    },
+    "keywords": [
+        "restfulAPI",
+        "NodeJS",
+        "Mocha",
+        "Chai",
+        "Express"
+    ],
+    "author": "Saim Akhtar Node",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "nodemon": "^1.19.2"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "mocha": "^6.2.0"
+    }
+}
