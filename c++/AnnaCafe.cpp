@@ -45,7 +45,7 @@ void MergeSortedIntervals(vector<int>& v, int start, int mid, int end1) {
 
 void MergeSort(vector<int>& v, int start, int end1) {
 	if (start < end1) {
-		int m = (start + end1) / 2;
+		int mid = (start + end1) / 2;
 		MergeSort(v, start, mid);
 		MergeSort(v, mid + 1, end1);
 		MergeSortedIntervals(v, start, mid, end1);
