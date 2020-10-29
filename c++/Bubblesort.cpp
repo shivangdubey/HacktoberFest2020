@@ -1,11 +1,14 @@
 #include <bits/stdc++.h> 
 using namespace std; 
   
-void swap(int *xp, int *yp)  
+void swap(int &xp, int &yp)  
 {  
-    int temp = *xp;  
-    *xp = *yp;  
-    *yp = temp;  
+    if (&xp != &yp)
+    {
+        xp ^= yp;
+        yp ^= xp;
+        xp ^= yp;
+    }
 }  
   
 // A function to implement bubble sort  
@@ -17,7 +20,7 @@ void bubbleSort(int arr[], int n)
     // Last i elements are already in place  
     for (j = 0; j < n-i-1; j++)  
         if (arr[j] > arr[j+1])  
-            swap(&arr[j], &arr[j+1]);  
+            swap(arr[j], arr[j+1]);  
 }  
   
 /* Function to print an array */
