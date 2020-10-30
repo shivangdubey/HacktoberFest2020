@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eeecda;
+  color: #373a40;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #646464;
+  border-bottom: 1px solid #646464;
+  font-size: 32px;
+  line-height: 0;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+.text {
+  width: 50%;
+}
+
+.text h1 {
+  font-family: "Comfortaa", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  line-height: 0.9;
+}
+
+.interleave {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 2;
+}
+<div class="container">
+  <div class="quote"><h1>&ldquo;</h1></div>
+  <div class="text-container">
+    <div class="text">
+      <h1>Take action!<br/><span class="interleave">An inch of movement</span> <br/>will bring<br/><span class="interleave">you closer to your</span> <br/>goals than <br/><span class="interleave">a mile of action.</h1>
+    </div>
+  </div>
+  <div class="quote"><h1>&rdquo;</h1></div>
+</div>
