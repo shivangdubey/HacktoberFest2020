@@ -1,0 +1,33 @@
+import java.util.Scanner; 
+class magic 
+{
+     public static void main (String args[])
+       {
+            Scanner sc = new Scanner (System.in);
+            int n;
+            System.out.println("Enter a number");
+            n=sc.nextInt();
+            if (n>=100 && n<=999);
+            {
+                while (n>9)
+                {
+                    int m=n;
+                    int s=0,d;
+                    
+                    while (m!=0)
+                    {
+                        d=m%10;
+                        s=s+d;
+                        m=m/10;
+                    }
+                    n=s;
+                }
+                if (n==1)
+                System.out.println("Magic number");
+                else 
+                System.out.println("Not a magic number");
+            }
+        }
+    }
+                
+      
