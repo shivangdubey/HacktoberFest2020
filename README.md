@@ -63,3 +63,7 @@ It is more relevant and easy to use for users.
 Want to contribute? Great! Please check the [Contribution guideline](https://github.com/shivangdubey/HacktoberFest2020/blob/master/CONTRIBUTING.md).  
 
 This repository is the starter code for you. Therefore, I would like to accept your pull requests 😎
+
+Follow me on GitHub [Shivang Dubey](https://github.com/shivangdubey)
+
+Star this repository :point_up:
