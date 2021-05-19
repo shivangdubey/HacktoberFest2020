@@ -1,9 +1,11 @@
 # HacktoberFest2020
 Repository to let enthusiasts create issues and pull requests for the Open Source event [Hacktoberfest](https://hacktoberfest.digitalocean.com)
 
+Featured Video: [18:11](https://youtu.be/MHPKIBSgxAA)
 
-### NOTE
-## No Pull request would be accepted without a brief description about the project or code being pulled. 
+
+## NOTE
+# No Pull request would be accepted without a brief description about the project or code being pulled. 
 
 ## Table of Contents
 
