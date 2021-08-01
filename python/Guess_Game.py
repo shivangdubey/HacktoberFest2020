@@ -41,7 +41,7 @@ while True:
     except ValueError:
         print("Please provide a numeric number!")
 
-    # If the guess is the number let them know, otherwise tell them if they're too hugh or too low.
+    # If the guess is the number let them know, otherwise tell them if they're too high or too low.
     if guess == number:
         print(f"Nice job {name}, you guessed the right number!")
         break
