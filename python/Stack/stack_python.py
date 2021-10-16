@@ -1,36 +1,30 @@
-# Building a stack using python list
+# Python program to
+# demonstrate stack implementation
+# using list
 
-class Stack:
-    def __init__(self):
-        self.items = []
 
-    def is_empty(self):
-        return self.items == []
+stack = []
 
-    def push(self, item):
-        self.items.append(item)
+# append() function to push
+# element in the stack
+stack.append('a')
+stack.append('b')
+stack.append('c')
 
-    def pop(self):
-        if self.is_empty() == True:
-            return None
-        else:
-            return self.items.pop()
-    
-    def top_stack(self):
-        if not self.is_empty():
-            return self.items[-1]
+print('Initial stack')
+print(stack)
 
-# Testing
-MyStack = Stack()
+# pop() function to pop
+# element from stack in
+# LIFO order
+print('\nElements popped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
 
-MyStack.push("Web Page 1")
-MyStack.push("Web Page 2")
-MyStack.push("Web Page 3")
+print('\nStack after elements are popped:')
+print(stack)
 
-print (MyStack.items)
-
-print(MyStack.top_stack())
-
-MyStack.pop()
-MyStack.pop()
-print(MyStack.pop())
+# uncommenting print(stack.pop())
+# will cause an IndexError
+# as the stack is now empty
