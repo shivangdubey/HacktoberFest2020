@@ -1,38 +1,18 @@
-def MatrixPrint(X):
-    for i in X:
-        print(i)
+import numpy as np
 
-def MatrixInput(a,b):
-    X=[]
-    for i in range(a):
-        temp=[]
-        for j in range(b):
-            print("Enter Element of Row",i+1,"and Column",j+1,": ",end="")
-            temp.append(float(input()))
-        X.append(temp)
-    return X
-    
-print('FIRST MATRIX')
-m=int(input("Enter Number of Rows    : "))
-n=int(input("Enter Number of Columns : "))
-A=MatrixInput(m,n)
-MatrixPrint(A)
+def createMatrix(row):
+    mat1 = []
+    for i in range(row):
+        k = np.array(list(map(float, input(f"enter element of row number {i+1} seperated by space : ").strip().split())))
+        mat1.append(k)
+    mat1 = np.array(mat1)
+    return mat1
 
-print('\nSECOND MATRIX')
-p=int(input("Enter Number of Columns : "))
-B=MatrixInput(n,p)
-MatrixPrint(B)
+print("dimension := rows x columns")
+n1, m1 = list(map(int,input("enter dimension of first matrix with a space: ").strip().split()))
+n2, m2 = list(map(int,input("enter dimension of second matrix with a space: ").strip().split()))
 
+mat1 = createMatrix(n1)
+mat2 = createMatrix(n2)
 
-C=[]
-for i in range(m):
-    temp=[]
-    for k in range(p):
-        s=0
-        for j in range(n):
-            s+=A[i][j]*B[j][k]
-        temp.append(s)
-    C.append(temp)
-
-print("\nProduct")
-MatrixPrint(C)
+print(np.matmul(mat1,mat2))
